@@ -34,10 +34,3 @@ ElectroShop is a full-stack E-Commerce web application developed using **ReactJS
 - MySQL
 
 ---
-
-# ⚙️ Installation & Setup
-
-## 🔹 Clone Repository
-
-```bash
-git clone https://github.com/yourusername/ElectroShop.git
