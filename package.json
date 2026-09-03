@@ -13,10 +13,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm start --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "test": "npm test --prefix frontend -- --watchAll=false",
+    "frontend:start": "npm start --prefix frontend",
+    "frontend:build": "npm run build --prefix frontend",
+    "frontend:test": "npm test --prefix frontend",
+    "backend:build": "mvn clean package -f backend/pom.xml -DskipTests",
+    "backend:test": "mvn test -f backend/pom.xml"
   },
   "eslintConfig": {
     "extends": [
