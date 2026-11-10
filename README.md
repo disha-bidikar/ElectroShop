@@ -55,12 +55,12 @@ ElectroShop AI is a modern, full-stack, enterprise-grade e-commerce application 
 
 ```mermaid
 flowchart TD
-    Client["React 18 Frontend\n(Modern Glassmorphism UI + Floating AI)"]
-    API["Spring Boot 3 REST API\n(Controllers & JWT Filter)"]
-    Services["Domain Services\n(Auth, Product, Cart, Order, Review)"]
-    AIService["AI Service Layer\n(AIService, PromptService, ContextService)"]
-    DB[("MySQL Database\n(10 JPA Entities & Relations)")]
-    LLM["LLM Provider\n(Google Gemini / OpenAI / Smart Fallback)"]
+    Client["React 18 Frontend<br/>(Modern Glassmorphism UI + Floating AI)"]
+    API["Spring Boot 3 REST API<br/>(Controllers & JWT Filter)"]
+    Services["Domain Services<br/>(Auth, Product, Cart, Order, Review)"]
+    AIService["AI Service Layer<br/>(AIService, PromptService, ContextService)"]
+    DB[("MySQL Database<br/>(10 JPA Entities & Relations)")]
+    LLM["LLM Provider<br/>(Google Gemini / OpenAI / Smart Fallback)"]
 
     Client -->|REST Requests + JWT| API
     API --> Services
@@ -81,12 +81,11 @@ flowchart LR
     B --> C["Product Database"]
     C -->|Relevant Products Filter| D["Product Context"]
     D --> E["AI Service & Prompts"]
-    E --> F["LLM Provider\n(Gemini / OpenAI / Fallback)"]
+    E --> F["LLM Provider<br/>(Gemini / OpenAI / Fallback)"]
     F -->|Raw Response| G["Response Validation"]
     G --> H["Recommendations / Search / Comparison"]
     H --> I["React UI"]
 ```
-
 ---
 
 ## 📁 Project Structure
